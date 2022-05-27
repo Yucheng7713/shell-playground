@@ -1,0 +1,24 @@
+# Linux Distribution Spec checking commands
+
+1. uname - To know only the system name
+         <-s> : Print the kernel name of the system.
+         <-n> : View the network hostname.
+         <-v> : Check the version of kernel.
+         <-r> : Get information of kernel release.
+         <-m> : Print machine hardware name.
+         <-a> : Output all information comprehensively.
+
+2. lshw - Gather vast information of the hardware spec.
+         (The command is usually executed by root user or with sudo command, The information provided by lshw was gathered from different /proc files.)
+         <-short> : Print a summary of hardware information.
+         <-html> : Output hardware information as an html file.
+
+3. lscpu - Show information of the cpu architecture. The information are gathered from sysfs and /proc/cpuinfo.
+
+4. lsblk - Report information about storage devices such as hard disks, flash drives.
+         <-a> : View all block devices on the system.
+
+5. lsusb - Get information regarding USB controllers and all the devices which are connected to them.
+         <-v> : Generate detailed information about each USB device.       
+
+6. cat /etc/os-release - Check for Linux distribution 
