@@ -1,4 +1,5 @@
 # Linux Distribution Spec checking commands
+# The following commands are useful when there is a need to check out specifications of logged-on OS/hardware.
 
 1. uname - To know only the system name
          <-s> : Print the kernel name of the system.

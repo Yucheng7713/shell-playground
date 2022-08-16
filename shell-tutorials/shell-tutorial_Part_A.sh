@@ -2,23 +2,24 @@
 
 # The first line is called "Sha-bang" coming along with the path of interpreter which will read all commands in the script.
 # The option "-x" means debug mode.
+# The option works for both #!/bin/sh and #!/bin/bash
 
 # Contents :
 # 1. If statement
-# 2. Loop statement (for & while)
+# 2. Loop statement (for, while, until)
 # 3. Special annotation (e.g. $#, $?, $@)
 
 
 # If conditional statement.
 #---------------------------------------------------------------------------------------------------------------------------------
 if [ $# -ne 3 ]; then
-    echo "Argument not found. Usage : shell-tutorial.sh <NUM> <STRING> <STRING>"
+    echo "Argument not match. Usage : shell-tutorial.sh <NUM> <STRING> <STRING>"
     exit 1
 fi
 
 # The above if statement is equal to below
 #if test $# -ne 3; then
-#   echo "Argument not found. Usage : shell-tutorial.sh <NUM> <STRING> <STRING>"
+#   echo "Argument not match. Usage : shell-tutorial.sh <NUM> <STRING> <STRING>"
 #   exit 1
 #fi
 

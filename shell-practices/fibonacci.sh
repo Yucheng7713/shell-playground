@@ -6,7 +6,7 @@
 # 0 [ 1 1 2 3 5 8 13 ]
 
 if [ $# -ne 1 ]; then
-    echo "Miss an integer argument."
+    echo "Only 1 positive integer argument is required."
     exit 8
 fi
 

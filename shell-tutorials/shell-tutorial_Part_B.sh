@@ -36,7 +36,8 @@ test ./confs/shell-tutorial_Part_B.conf
 #---------------------------------------------------------------------------------------------------------------------------------
 # In shell, there are two ways to do arithmatic expression :
 # $((n+1)) 
-# `expr $n + 1`
+# `expr $n + 1` - !! If no space between each argument, the result will be given as "$n+1"
+# Work in both Shell (#!/bin/sh) and Bash (#!/bin/bash)
 n=0
 n=$((n+10))
 n=`expr $n + 10`
