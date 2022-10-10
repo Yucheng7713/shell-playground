@@ -10,9 +10,8 @@
 # 3. Special annotation (e.g. $#, $?, $@)
 
 
-# If conditional statement.
-#---------------------------------------------------------------------------------------------------------------------------------
-if [ $# -ne 3 ]; then
+### If conditional statement.
+ if [ $# -ne 3 ]; then
     echo "Argument not match. Usage : shell-tutorial.sh <NUM> <STRING> <STRING>"
     exit 1
 fi
@@ -23,17 +22,20 @@ fi
 #   exit 1
 #fi
 
-# If-statement option
+# If-statement general operator
 # -eq : equal
 # -ne : not equal
 # -ge : greater than or equal
 # -gt : greater than
+
+# If-statement file test operator
 # -d : if a file exists and it is a directory.
+# -e : True if the file exists and is a file regardless of type (node, directory, socket etc.)
 # -f : if a file exists and it is a regular file.
 # -r : if a file exists and it is readable.
 # -z : true if length of string is zero.
 
-# Loop statmenet
+### Loop statmenet
 #---------------------------------------------------------------------------------------------------------------------------------
 # For loop
 for (( i=0; i<$1; i++ ))
