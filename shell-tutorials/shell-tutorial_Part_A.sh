@@ -61,6 +61,8 @@ done
 
 ### Special annotation.
 #---------------------------------------------------------------------------------------------------------------------------------
+# The absolute path of the shell or shell script.
+echo "The path of shell (or shell script) = "$0
 # The number of arguments passed to this script.
 echo "The input number of arguments = "$#
 
