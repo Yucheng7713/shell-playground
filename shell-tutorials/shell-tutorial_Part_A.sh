@@ -86,3 +86,18 @@ echo "The previous statement (echo all arguments)'s execution status > ${?}"
 
 # The current PID
 echo "The current \$PID > ${$}"
+
+
+### File descriptor
+#---------------------------------------------------------------------------------------------------------------------------------
+# Standard input (stdin) : 0
+# Standard output (stdout) : 1
+# Standard error (stderr) : 2
+
+# To redirect a stream to file descriptor : >&
+echo "Sample stream" 2>&1
+
+### Virtual file
+#---------------------------------------------------------------------------------------------------------------------------------
+# /dev/null : a place in which uses to discard unwanted stream.
+echo "Garbage stream" >/dev/null
